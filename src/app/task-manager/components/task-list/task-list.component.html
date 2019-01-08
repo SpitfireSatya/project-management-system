@@ -1,0 +1,32 @@
+<div class="container">
+
+  <h2 class="text-center">Welcome to task list page</h2>
+
+  <div class="col-lg-12">
+
+    <div class="row border-all">
+      <div class="m-0 p-10 col-lg-7">
+        <span>Task Name</span>
+      </div>
+      <div class="m-0 p-10 col-lg-4">
+        <span>Owner</span>
+      </div>
+      <div class="m-0 p-10 col-lg-1">
+        <span></span>
+      </div>
+    </div>
+
+    <div class="row border-all" *ngFor="let task of taskList" [ngClass]="{
+      'bg-green': task.status === 'completed',
+      'bg-blue': task.status === 'in-progress',
+      'bg-red': task.status === 'blocked'
+    }">
+      <div class="m-0 p-10 col-lg-7">{{ task.taskName }}</div>
+      <div class="m-0 p-10 col-lg-4">{{ task.owner }}</div>
+      <div class="m-0 p-10 col-lg-1">
+        <i style="cursor: pointer;" class="fa fa-edit"></i>
+      </div>
+    </div>
+  </div>
+
+</div>

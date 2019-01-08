@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+
+button{
+  background: none;
+  border: none;
+  color: #E22774;
+  cursor: pointer;
+}
+
+button:hover, button:focus{
+  border:none;
+}
+
+p, span{
+  font-size: 14px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.text-magenta{
+  color: #E22774;
+}

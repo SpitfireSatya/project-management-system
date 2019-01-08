@@ -1,0 +1,24 @@
+
+.p-10 {
+  padding: 10px;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
+.border-all {
+  border: 1px black solid;
+}
+
+.bg-green {
+  background-color: lightgreen;
+}
+
+.bg-red {
+  background-color: lightsalmon;
+}
+
+.bg-blue {
+  background-color: lightblue;
+}
